@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/meme_background_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemeResults">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_88sdp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/memePageHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_header_design"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/meme_page_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_27ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_389sdp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+        <ImageView
+            android:id="@+id/memeDisplayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_31sdp"
+            android:layout_marginTop="@dimen/_46sdp"
+            android:layout_marginEnd="@dimen/_31sdp"
+            android:layout_marginBottom="@dimen/_46sdp"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ProgressBar
+            android:id="@+id/progressBarMemePage"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_87sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <ImageButton
+            android:id="@+id/shareMemeButton"
+            android:layout_width="@dimen/_77sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:clickable="true"
+            android:contentDescription="@string/share_meme_button_description"
+            android:focusable="true"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/downloadMemeButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/downloadMemeButton"
+            android:layout_width="@dimen/_77sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:clickable="true"
+            android:contentDescription="@string/download_meme_button_description"
+            android:focusable="true"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nextMemeButton"
+            app:layout_constraintStart_toEndOf="@+id/shareMemeButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/download" />
+
+        <ImageButton
+            android:id="@+id/nextMemeButton"
+            android:layout_width="@dimen/_77sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:clickable="true"
+            android:contentDescription="@string/next_meme_button_description"
+            android:focusable="true"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/downloadMemeButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/next" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_page_background_image"
+    tools:context=".HomePage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_89sdp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_header_design"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/home_page_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_27ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_470sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageButton
+            android:id="@+id/emojiButton"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_115sdp"
+            android:layout_marginStart="@dimen/_31sdp"
+            android:layout_marginEnd="@dimen/_31sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/emojis_button_description"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:focusable="true"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/memeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/emoji_button_background" />
+
+        <ImageButton
+            android:id="@+id/memeButton"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_115sdp"
+            android:layout_margin="@dimen/_31sdp"
+            android:layout_marginStart="@dimen/_31sdp"
+            android:layout_marginEnd="@dimen/_31sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/memes_button_description"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:focusable="true"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/stickerButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/memes_button_background" />
+
+        <ImageButton
+            android:id="@+id/stickerButton"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_115sdp"
+            android:layout_marginStart="@dimen/_31sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_31sdp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/stickers_button_description"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:focusable="true"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/memeButton"
+            app:srcCompat="@drawable/stickers_button_background" />
+
+        <ImageButton
+            android:id="@+id/homePageBackButton"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_54sdp"
+            android:layout_marginStart="@dimen/_31sdp"
+            android:layout_marginTop="@dimen/_31sdp"
+            android:layout_marginEnd="@dimen/_31sdp"
+            android:layout_marginBottom="@dimen/_31sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:contentDescription="@string/back_to_start_page_button_desceription"
+            android:paddingLeft="@dimen/_85sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_85sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:scaleType="fitXY"
+            android:focusable="true"
+            android:clickable="true"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stickerButton"
+            app:srcCompat="@drawable/backward" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

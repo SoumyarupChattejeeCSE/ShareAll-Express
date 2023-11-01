@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/emoji_background_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmojiResults">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_87sdp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/emojiPageHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_header_design"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/emoji_page_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_27ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_389sdp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ImageView
+            android:id="@+id/emojiDisplayView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_107sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginEnd="@dimen/_107sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@+id/displayEmojiTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="@dimen/_198sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_marginStart="@dimen/_77sdp"
+            android:layout_marginTop="@dimen/_53sdp"
+            android:layout_marginEnd="@dimen/_77sdp"
+            android:layout_marginBottom="@dimen/_23sdp"
+            android:background="@drawable/rounded_corners_header_design"
+            android:ems="10"
+            android:hint="@string/search_emojis_text_view"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toTopOf="@+id/searchButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/displayEmojiTitle"
+            android:layout_width="@dimen/_198sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_77sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_77sdp"
+            android:layout_marginBottom="@dimen/_85sdp"
+            android:background="@drawable/rounded_corners_header_design"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black"
+            android:text="@string/emoji_title_edittext"
+            android:textAlignment="center"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emojiDisplayView" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:contentDescription="@string/emoji_search_button_description"
+            android:focusable="true"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintEnd_toStartOf="@+id/refreshButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:srcCompat="@drawable/search_icon" />
+
+        <ImageButton
+            android:id="@+id/refreshButton"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_100sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:contentDescription="@string/emoji_refresh_button_description"
+            android:focusable="true"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/searchButton"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:srcCompat="@drawable/refresh_icon" />
+
+        <ProgressBar
+            android:id="@+id/progressBarEmojiPage"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.556" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_87sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <ImageButton
+            android:id="@+id/shareEmojiButton"
+            android:layout_width="@dimen/_77sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/share_emoji_button_description"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/downloadEmojiButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/downloadEmojiButton"
+            android:layout_width="@dimen/_77sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/download_emoji_button_description"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nextEmojiButton"
+            app:layout_constraintStart_toEndOf="@+id/shareEmojiButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/download" />
+
+        <ImageButton
+            android:id="@+id/nextEmojiButton"
+            android:layout_width="@dimen/_77sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_corners_button_design"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/next_emoji_button_description"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/downloadEmojiButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/next" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

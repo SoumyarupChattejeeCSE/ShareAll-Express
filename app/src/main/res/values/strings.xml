@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ShareAll Express</string>
+    <string name="exit">Exit</string>
+    <string name="get_started">Get started</string>
+    <string name="start_page_title">Shareall Express</string>
+    <string name="home_page_title">SHAREALL EXPRESS</string>
+    <string name="emojis_button_description">Emojis Button</string>
+    <string name="memes_button_description">Memes Button</string>
+    <string name="stickers_button_description">Stickers Button</string>
+    <string name="back_to_start_page_button_desceription">Back to the Start Page Button</string>
+    <string name="share_meme_button_description">Share Meme</string>
+    <string name="download_meme_button_description">Download Meme</string>
+    <string name="next_meme_button_description">Next Meme</string>
+    <string name="meme_page_title">MEME HUB</string>
+    <string name="sticker_page_title">STICKER HUB</string>
+    <string name="share_sticker_button_description">Share Sticker</string>
+    <string name="download_sticker_button_description">Download Sticker</string>
+    <string name="next_sticker_button_description">Next Sticker</string>
+    <string name="emoji_page_title">EMOJI HUB</string>
+    <string name="download_emoji_button_description">Download Emoji</string>
+    <string name="next_emoji_button_description">Next Emoji</string>
+    <string name="search_emojis_text_view">Search Emojis</string>
+    <string name="emoji_title_edittext">Emoji Title</string>
+    <string name="emoji_search_button_description">Search Button</string>
+    <string name="emoji_refresh_button_description">Refresh Button</string>
+    <string name="share_emoji_button_description">Share Emoji</string>
+</resources>
