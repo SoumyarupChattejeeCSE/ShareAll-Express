@@ -6,13 +6,15 @@ ShareAll Express is an android application which provides users with the most po
 
 1. Android Studio IDE.
 
-2. Kotlin.
+2. Android SDK. 
 
-3. Volley API library.
+3. Kotlin.
 
-4. Glide Library.
+4. Volley API library.
+
+5. Glide Library.
    
-5. Coroutines 
+6. Coroutines 
 
 
 ## Features
